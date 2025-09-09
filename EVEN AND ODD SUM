@@ -1,0 +1,27 @@
+package com.sample;
+import java.util.Scanner;
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scanner =new Scanner(System.in);
+int n=scanner.nextInt();
+int[] arr=new int[n];
+for(int i=0;i<n;i++)
+{
+	arr[i]=scanner.nextInt();
+}
+int sum=0,sum1=0;
+for(int i=0;i<n;i++)
+{
+	if(arr[i]%2==0)
+		sum=arr[i]+sum;
+	else
+		sum1=arr[i]+sum1;
+}
+System.out.println(sum);
+System.out.println(sum1);
+scanner.close();
+	}
+
+}
